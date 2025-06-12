@@ -7,7 +7,8 @@
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	"features": {
 		"ghcr.io/devcontainers-extra/features/n8n:1": {},
-		"ghcr.io/devcontainers-extra/features/zsh-plugins:0": {}
+		"ghcr.io/devcontainers-extra/features/zsh-plugins:0": {},
+		"ghcr.io/robbert229/devcontainer-features/postgresql-client:1": {}
 	},
 	"customizations": {
 		"vscode": {
