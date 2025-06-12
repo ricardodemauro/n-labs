@@ -17,14 +17,19 @@ export function ChatContainer() {
   return (
     <div className="flex flex-col h-full bg-white rounded-lg shadow">
       {/* Chat Header */}
-      <div className="flex items-center justify-between p-4 border-b border-gray-200">
-        <h2 className="text-xl font-semibold text-gray-800">Echo Chat</h2>
-        <button
-          onClick={clearChat}
-          className="text-gray-500 hover:text-red-500 text-sm"
-        >
-          Clear Chat
-        </button>
+      <div className="flex flex-col p-4 border-b border-gray-200">
+        <div className="flex items-center justify-between">
+          <h2 className="text-xl font-semibold text-gray-800">Echo Chat</h2>
+          <button
+            onClick={clearChat}
+            className="text-gray-500 hover:text-red-500 text-sm"
+          >
+            Clear Chat
+          </button>
+        </div>
+        <p className="text-xs text-gray-500 mt-2">
+          Type a message or click the microphone icon to use speech recognition
+        </p>
       </div>
       
       {/* Chat Messages Area */}
